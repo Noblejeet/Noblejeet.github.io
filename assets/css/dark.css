@@ -1,0 +1,50 @@
+/* Global overrides for dark theme */
+body {
+	background-color: #121212;
+	color: #e0e0e0;
+}
+
+/* Links */
+a {
+	color: #4fc3f7;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+/* Section backgrounds and text */
+#intro,
+#main,
+.post,
+.split.contact,
+header.major,
+nav,
+footer,
+#copyright {
+	background-color: #121212 !important;
+	color: #e0e0e0 !important;
+}
+
+/* Navigation icons and links */
+nav ul li a,
+nav ul.icons li a {
+	color: #f0f0f0 !important;
+}
+
+/* Image styles */
+.image.main img,
+.image.fit img {
+	border-radius: 10px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* Buttons */
+.button {
+	background-color: #4fc3f7;
+	color: #121212;
+	border: none;
+}
+.button:hover {
+	background-color: #0288d1;
+	color: #ffffff;
+}
