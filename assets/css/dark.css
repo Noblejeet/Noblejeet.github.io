@@ -48,3 +48,8 @@ nav ul.icons li a {
 	background-color: #0288d1;
 	color: #ffffff;
 }
+
+/* Fix for dark headings */
+h1, h2, h3, h4, h5, h6 {
+	color: #f0f0f0 !important;
+}
