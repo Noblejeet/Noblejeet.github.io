@@ -54,13 +54,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f0f0f0 !important;
 }
 
-/* Specifically target the PROJECTS tab */
-section.posts > .major:before {
-    background-color: #0d0d0d !important;
-    color: #4fc3f7 !important;
-    border-color: #4fc3f7 !important;
+/* Fix the white background behind "PROJECTS" title */
+.posts .major:before {
+    background-color: #0d0d0d !important;  /* dark bg */
+    border-color: #4fc3f7 !important;      /* blue tone border */
+    color: #f0f0f0 !important;             /* optional, text color */
 }
 
-section.posts > .major {
-    color: #f0f0f0 !important;
+.posts .major {
+    color: #f0f0f0 !important;  /* ensures "PROJECTS" text is visible */
 }
