@@ -54,9 +54,13 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f0f0f0 !important;
 }
 
-/* Fix the white section header box */
-.major:before {
-    background-color: #0d0d0d !important;  /* dark tone */
-    color: #4fc3f7 !important;             /* blue text */
+/* Specifically target the PROJECTS tab */
+section.posts > .major:before {
+    background-color: #0d0d0d !important;
+    color: #4fc3f7 !important;
     border-color: #4fc3f7 !important;
+}
+
+section.posts > .major {
+    color: #f0f0f0 !important;
 }
