@@ -4687,3 +4687,10 @@ input, select, textarea {
 		}
 
 	}
+/* Custom: Fix Projects tab visibility */
+.posts:before {
+    background-color: #1e1e1e !important;  /* Dark gray background */
+    color: #ffb300 !important;             /* Amber text */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
