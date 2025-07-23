@@ -54,10 +54,12 @@ h1, h2, h3, h4, h5, h6 {
 	color: #f0f0f0 !important;
 }
 
-/* Fix Projects tab visibility */
+/* Fix for section label (e.g., "PROJECTS") */
 .posts:before {
-    background-color: #1e1e1e !important;
-    color: #ffb300 !important;
+    background-color: #0d0d0d !important;  /* dark background */
+    color: #4fc3f7 !important;             /* blue text */
+    text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 1px;
+    padding: 0.5em 1em;
+    border-radius: 3px;
 }
