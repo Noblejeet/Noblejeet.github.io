@@ -13,7 +13,7 @@
     }
     .section {
       padding: 4rem 2rem;
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
     }
     .section h2 {
@@ -25,30 +25,33 @@
       padding: 1rem 0;
       margin-bottom: 2rem;
     }
-    .posts {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    .entry {
+      display: flex;
+      flex-direction: row;
       gap: 2rem;
-    }
-    .post {
       border-top: 1px solid #fff;
-      padding-top: 1rem;
+      padding: 2rem 0;
     }
-    .post img {
-      width: 100%;
-      height: auto;
+    .entry img {
+      width: 180px;
+      height: 120px;
+      object-fit: cover;
       border-radius: 4px;
     }
-    .post h3 {
+    .entry-content {
+      flex: 1;
+    }
+    .entry-content h3 {
       font-size: 1.3rem;
       margin: 0.5rem 0;
     }
-    .post h4 {
+    .entry-content h4 {
       font-style: italic;
       font-size: 0.9rem;
       color: #ccc;
+      margin: 0;
     }
-    .post p {
+    .entry-content p {
       font-size: 0.95rem;
       line-height: 1.6;
     }
@@ -72,7 +75,7 @@
     <nav id="nav">
       <ul class="links">
         <li><a href="index.html">Projects</a></li>
-        <li class="active"><a href="experience.html"> My Experience</a></li>
+        <li class="active"><a href="experience.html">My Experience</a></li>
       </ul>
       <ul class="icons">
         <li><a href="https://github.com/noblejeet" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -83,61 +86,72 @@
     <!-- Experience Section -->
     <section class="section">
       <h2>Experience</h2>
-      <div class="posts">
-        <article class="post">
-          <img src="images/moderna.jpg" alt="Moderna">
+      <div class="entry">
+        <img src="images/moderna.jpg" alt="Moderna">
+        <div class="entry-content">
           <h3>Supply Chain Specialist Co-op</h3>
           <h4>Moderna | Jan 2024 – Aug 2024</h4>
           <p>Built SAP-powered dashboards, improved demand forecast by 35%, automated MRP and RCCP planning, and enhanced S&OP decision-making. Coordinated cross-functional production execution and drove end-to-end material planning.</p>
           <p class="skills"><strong>Skills:</strong> Planning, Tableau, SAP, S&OP, Inventory Management</p>
-        </article>
+        </div>
+      </div>
 
-        <article class="post">
-          <img src="images/mcdermott.jpg" alt="McDermott">
+      <div class="entry">
+        <img src="images/mcdermott.jpg" alt="McDermott">
+        <div class="entry-content">
           <h3>Associate Engineer - Supply Chain</h3>
           <h4>McDermott Intl. | Nov 2020 – Aug 2022</h4>
           <p>Reduced inventory inaccuracy by 25% through RFID tracking, standardized Material ID codes across 25+ projects, and improved inventory turnover saving $3.5M.</p>
           <p class="skills"><strong>Skills:</strong> RFID, Inventory Analysis, GSAP, Standardization</p>
-        </article>
+        </div>
+      </div>
 
-        <article class="post">
-          <img src="images/mahindra.jpg" alt="Mahindra">
+      <div class="entry">
+        <img src="images/mahindra.jpg" alt="Mahindra">
+        <div class="entry-content">
           <h3>Supply Chain Intern</h3>
           <h4>Mahindra Rise | Jan 2019 – Jun 2019</h4>
           <p>Developed demand models in Kinaxis, improved material flow via 5S and ABC analysis. Automated replenishment logic for over 250 SKUs.</p>
           <p class="skills"><strong>Skills:</strong> Kinaxis, Demand Planning, Excel Macros, Lean</p>
-        </article>
+        </div>
       </div>
     </section>
 
     <!-- Education Section -->
-<section class="posts">
-	<article>
-		<header>
-			<h2>Education</h2>
-		</header>
-		<p>
-			<strong>M.S. in Engineering Management (supply chain track)</strong><br>
-			Northeastern University, Boston, MA<br>	
-		</p>
-		<p>
-			<strong>B.S. in Mechanical Engineering</strong><br>
-			Punjab Engineering College, Chandigarh, India
-		</p>
-	</article>
+    <section class="section">
+      <h2>Education</h2>
+      <div class="entry">
+        <img src="images/northeastern.png" alt="Northeastern">
+        <div class="entry-content">
+          <h3>M.S. in Engineering Management</h3>
+          <h4>Northeastern University, Boston, MA</h4>
+          <p><strong>Focus:</strong> Supply Chain Planning, Data Analytics, Lean Ops</p>
+        </div>
+      </div>
 
-	<!-- Certification Section -->
-	<article>
-		<header>
-			<h2>Certifications</h2>
-		</header>
-		<ul>
-			<li>Certified in Six Sigma</li>
-			<li>Certified in Lean Inventory Management</li>
-		</ul>
-	</article>
-</section>
-    
+      <div class="entry">
+        <img src="images/pec.png" alt="Punjab Engineering College">
+        <div class="entry-content">
+          <h3>B.S. in Mechanical Engineering</h3>
+          <h4>Punjab Engineering College, Chandigarh, India</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certification Section -->
+    <section class="section">
+      <h2>Certifications</h2>
+      <div class="entry">
+        <img src="images/apics.png" alt="APICS">
+        <div class="entry-content">
+          <ul>
+            <li>Certified in Six Sigma</li>
+            <li>Certified in Lean Inventory Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <footer id="footer">
       <div class="inner">
