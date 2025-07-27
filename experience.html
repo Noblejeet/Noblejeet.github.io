@@ -23,42 +23,54 @@
       border-top: 2px solid #fff;
       border-bottom: 2px solid #fff;
       padding: 1rem 0;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
     .entry {
       display: flex;
-      flex-direction: row;
+      align-items: flex-start;
       gap: 2rem;
-      border-top: 1px solid #fff;
-      padding: 2rem 0;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #444;
+      padding-bottom: 2rem;
     }
     .entry img {
-      width: 180px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 4px;
+      width: 100px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     .entry-content {
       flex: 1;
     }
     .entry-content h3 {
+      margin: 0 0 0.5rem;
       font-size: 1.3rem;
-      margin: 0.5rem 0;
+      font-weight: bold;
+      color: #ffffff;
     }
     .entry-content h4 {
+      margin: 0 0 1rem;
       font-style: italic;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #ccc;
-      margin: 0;
     }
     .entry-content p {
       font-size: 0.95rem;
       line-height: 1.6;
+      color: #ddd;
     }
     .skills {
-      margin-top: 0.8rem;
-      font-size: 0.9rem;
       color: #aaa;
+      font-size: 0.85rem;
+      margin-top: 0.5rem;
+    }
+    .entry-content ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+    .entry-content ul li {
+      margin-bottom: 0.5rem;
+      color: #ddd;
     }
   </style>
 </head>
@@ -86,6 +98,7 @@
     <!-- Experience Section -->
     <section class="section">
       <h2>Experience</h2>
+
       <div class="entry">
         <img src="images/moderna.jpg" alt="Moderna">
         <div class="entry-content">
@@ -120,6 +133,7 @@
     <!-- Education Section -->
     <section class="section">
       <h2>Education</h2>
+
       <div class="entry">
         <img src="images/northeastern.png" alt="Northeastern">
         <div class="entry-content">
@@ -141,12 +155,14 @@
     <!-- Certification Section -->
     <section class="section">
       <h2>Certifications</h2>
+
       <div class="entry">
         <img src="images/apics.png" alt="APICS">
         <div class="entry-content">
           <ul>
-            <li>Certified in Six Sigma</li>
+            <li>APICS Certified in Production & Inventory Management (CPIM)</li>
             <li>Certified in Lean Inventory Management</li>
+            <li>Certified in Six Sigma</li>
           </ul>
         </div>
       </div>
