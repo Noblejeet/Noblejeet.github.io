@@ -36,6 +36,8 @@ nav ul.icons li a {
 .image.fit img {
 	border-radius: 10px;
 	box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+	width: 50%;
+  	height: auto;
 }
 
 /* Buttons */
