@@ -65,13 +65,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .grid-layout {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, auto);  /* 2 rows */
   gap: 0;
-  /* remove border-left and border-top from container */
 }
 
 .grid-item {
-  border: 1px solid white;  /* uniform border on all sides */
-  box-sizing: border-box;   /* makes border part of the size */
+  border: 1px solid white;
+  box-sizing: border-box;
   padding: 2rem;
+  min-height: 500px; /* optional: make all boxes uniform height */
 }
