@@ -76,18 +76,3 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom: 1px solid white;
   padding: 2rem;
 }
-
-.posts {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2px; /* This gives you thin white lines between boxes */
-  border: 1px solid #fff;
-}
-
-.posts article {
-  border: 1px solid #fff;
-  padding: 2rem;
-  margin: 0;
-  box-shadow: none;
-  background: #121212;
-}
