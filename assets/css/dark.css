@@ -62,3 +62,17 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0d1b2a !important;  /* dark blue background */
   color: #f0f0f0 !important;             /* light text */
 }
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 0;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.grid-item {
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 2rem;
+}
