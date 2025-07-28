@@ -63,16 +63,32 @@ h1, h2, h3, h4, h5, h6 {
   color: #f0f0f0 !important;             /* light text */
 }
 
-.grid-layout {
+.posts.grid-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-template-rows: repeat(2, auto);  /* 2 rows */
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 0;
+  border: 1px solid white;
+  margin: 2rem auto;
+  width: fit-content;
 }
 
 .grid-item {
-  border: 1px solid white;
-  box-sizing: border-box;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
   padding: 2rem;
-  min-height: 500px; /* optional: make all boxes uniform height */
+  min-height: 500px;
+  box-sizing: border-box;
+}
+
+/* Remove right border from 2nd and 4th items */
+.grid-item:nth-child(2),
+.grid-item:nth-child(4) {
+  border-right: none;
+}
+
+/* Remove bottom border from 3rd and 4th items */
+.grid-item:nth-child(3),
+.grid-item:nth-child(4) {
+  border-bottom: none;
 }
